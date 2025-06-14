@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_exp_395/app_routes.dart';
 import 'package:navigation_exp_395/profile_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -18,7 +19,8 @@ class HomePage extends StatelessWidget {
             Text('Home'),
             ElevatedButton(onPressed: (){
 
-              Navigator.push(context, MaterialPageRoute(builder: (_) => ProfilePage()));
+              ///Navigator.push(context, MaterialPageRoute(builder: (_) => ProfilePage()));
+              Navigator.pushNamed(context, AppRoutes.PROFILEPAGE);
 
             }, child: Text('Next'))
           ],

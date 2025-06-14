@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:navigation_exp_395/home_page.dart';
+import 'package:navigation_exp_395/profile_page.dart';
+
+import 'app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +19,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomePage(),
+      //home: HomePage(),
+      initialRoute: "/",
+      routes: AppRoutes.pageRoutes(),
     );
   }
 }
